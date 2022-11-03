@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>fluid layout ex3</title>
+<style>
+ .container {text-align:center; font-weight:bold; font-size:24px; margin:50px auto; width:60vw; border:3px solid #000;}
+ .container .box{overflow:hidden;}
+ .container .box_col{height:25vh;}
+ /* 1행 */
+ .container .box .box_col{background-color:#5800FF; color:#fff;}
+ /* 2행 */
+ .container .box2 .box_col{background-color:#0096ff; float:left;
+ margin: 0.5%; width:32.333333%;}
+ /* 3행 */
+ .container .box3 .box_col{background-color:#0007ff; float:left;
+ margin: 0.5vw; width:calc(16.666666% - 1vw);}
+
+/* 
+clac();
+css 함수 다른 단위값들을 연산이 가능(+,-,/,*)
+연산자 사이에는 반드시 띄어쓰기 필요
+*/
+</style>
+</head>
+<body>
+ 	<div class="container">
+ 		<div class="box box1">
+ 			<div class="box_col">1</div>
+    </div>
+    <div class="box box2">
+    	<div class="box_col">2행1열</div>
+        <div class="box_col">2행2열</div>
+        <div class="box_col">2행3열</div>
+    </div>
+    <div class="box box3">
+    	<div class="box_col">3행1열</div>
+        <div class="box_col">3행2열</div>
+        <div class="box_col">3행3열</div>
+        <div class="box_col">3행4열</div>
+        <div class="box_col">3행5열</div>
+        <div class="box_col">3행6열</div>
+ </body>
